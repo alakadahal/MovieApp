@@ -32,7 +32,7 @@ function Home() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
 
-                <button type="submit" className="search-btn">Search</button>
+                <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movies-grid">
                 {movies.map(
