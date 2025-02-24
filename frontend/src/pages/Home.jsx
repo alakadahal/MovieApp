@@ -1,18 +1,25 @@
 import MovieCard from "../components/MovieCard";
-import { useState } from "react";
+import { useState, useEffects } from "react";
+import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState("");
+    const [movies, setMovies] = useState([]);
 
-    const movies = [
-        { id: 1, title: "john wick", release_date: "2020" },
-        { id: 2, title: "sohn wick 2", release_date: "2021" },
-        { id: 3, title: "rohn wick 3", release_date: "2022" }
+    useEffect(() => {
+        const loadPopularMovies = async () => {
+            try {
+                const popularMovies = await getPopularMovies();
+                setMovies(popularMovies);
+            }
+            catch (err) {
+            }
+            finally { }
+        };
+        loadPopular
+    }, [])
 
-
-
-    ];
     const handleSearch = () => {
         e.preventDefault();
         alert(searchQuery);
