@@ -10,12 +10,14 @@ function Favorites() {
             <div className="favorites">
                 <h2>Your Favorites</h2>
                 <div className="movies-grid">
-                    {favorites.map(movie => (
-                        <MovieCard key={movie} movie={movie.id} />
-                    ))}
+                    {favorites.map(
+                        (movie) => (
+                            <MovieCard movie={movie} key={movie.id} />
+
+                        ))}
                 </div>
             </div>
-        )
+        );
     }
     return (
         <div className="favorites-empty">
