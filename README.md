@@ -20,7 +20,7 @@ MovieApp is a simple and interactive web application that allows users to explor
 - **HTML5** – for structuring the web pages  
 - **CSS3** – for styling and responsiveness  
 - **JavaScript (Vanilla JS)** – for functionality and interactivity  
-- *(Optional)* **API Integration** – to fetch movie data from a third-party source like [The Movie Database (TMDb)](https://www.themoviedb.org/)  
+- **API Integration** – to fetch movie data from a third-party source. 
 
 ---
 
